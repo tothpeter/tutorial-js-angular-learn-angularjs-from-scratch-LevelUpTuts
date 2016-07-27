@@ -5,8 +5,8 @@ angular.module('directoryApp', [])
     dirList.toggle = false;
 
     dirList.list = [
-      {name: 'Toma', age: 35},
-      {name: 'Kalina.tech', age: 1}
+      {name: 'Toma', age: 35, img: 'https://s3.amazonaws.com/uifaces/faces/twitter/jollynutlet/73.jpg'},
+      {name: 'Kalina.tech', age: 1, img: 'https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/73.jpg'}
     ];
 
     dirList.addPerson = function() {
