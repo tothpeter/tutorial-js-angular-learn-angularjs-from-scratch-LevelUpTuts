@@ -2,7 +2,7 @@ angular.module('directoryApp', ['ngAnimate'])
   .controller('directoryController', function() {
     var dirList = this;
 
-    dirList.toggle = false;
+    dirList.toggle = true;
 
     dirList.list = [
       {name: 'Toma', age: 35, img: 'https://s3.amazonaws.com/uifaces/faces/twitter/jollynutlet/73.jpg'},
