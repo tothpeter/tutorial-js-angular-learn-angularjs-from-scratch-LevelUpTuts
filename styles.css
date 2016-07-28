@@ -18,10 +18,10 @@ li img {
   height: 50px;
 }
 .over-thirty {
-  background-color: red;
+  /*background-color: red;*/
 }
 .under-thirty {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 .hidden {
@@ -37,20 +37,36 @@ svg {
   height: 50px;
 }
 
-.fade.ng-enter {
-  transition:0.5s linear all;
+li.ng-enter {
+  /*transition:0.5s ease all;
   opacity:0;
+  transform: translateY(20px);*/
+
+  animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* The finishing CSS styles for the enter animation */
-.fade.ng-enter.ng-enter-active {
+/*li.ng-enter.ng-enter-active {
   opacity:1;
+  transform: translateY(0);
 }
 
-.fade.ng-leave {
+li.ng-leave {
   transition:0.5s linear all;
   opacity:1;
+  transform: translateY(0);
 }
-.fade.ng-leave.ng-leave-active {
+li.ng-leave.ng-leave-active {
+  transform: translateY(20px);
   opacity:0;
-}
+}*/
