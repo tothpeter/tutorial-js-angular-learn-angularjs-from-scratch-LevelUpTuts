@@ -33,8 +33,8 @@ angular.module('directoryApp', ['ngAnimate', 'ui.router'])
       dirList.age = '';
     };
   })
-  .directive('helloWorld', function() {
+  .directive('directoryPerson', function() {
     return {
-      template: 'Hello world'
+      templateUrl: 'directory-person.html'
     };
   });
